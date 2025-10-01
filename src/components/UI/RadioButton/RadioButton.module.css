@@ -1,0 +1,46 @@
+.wrapper{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.input{
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 2em;
+    height: 2em;
+    border: 1px solid var(--color-gray-500);
+    border-radius: 50%;
+
+    display: grid;
+    place-content: center;
+}
+
+.label{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-blue-900);
+}
+
+.input:checked{
+    background-color: var(--color-blue-100);
+    border: none;
+}
+
+.input::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: var(--color-blue-500);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 200ms transform;
+}
+
+.input:checked::before{
+    transform: scale(1);
+}

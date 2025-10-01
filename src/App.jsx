@@ -1,10 +1,10 @@
-import './styles/App.css'
+import Hero from "./components/sections/Hero/Hero.jsx";
 
 function App() {
 
   return (
     <>
-
+        <Hero/>
     </>
   )
 }

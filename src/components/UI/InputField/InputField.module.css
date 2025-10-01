@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-gray-500);
+}
+
+.input{
+    width: 100%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: -0.05em;
+    color: var(--color-blue-900);
+
+    border: 1px solid var(--color-gray-500);
+    border-radius: 12px;
+    padding: 16px 24px;
+}
+
+.fieldsWrapper{
+    display: flex;
+    gap: 24px;
+}
+
+.inputContainer{
+    position: relative;
+    width: 100%;
+}
+
+.units{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: -0.05em;
+    color: var(--color-blue-500);
+    pointer-events: none;
+
+    position: absolute;
+    right: 24px;
+    top: 16px;
+}
