@@ -32,26 +32,6 @@
     gap: 24px;
 }
 
-.fadeEnter {
-    opacity: 0;
-    transform: translateY(10px);
-}
-.fadeEnterActive {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 300ms ease, transform 300ms ease;
-}
-.fadeEnterDone {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.fadeExit {
-    opacity: 1;
-    transform: translateY(0);
-}
-.fadeExitActive {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 300ms ease, transform 300ms ease;
+.imperial{
+    flex-direction: column;
 }
