@@ -1,7 +1,20 @@
 import React from 'react';
 import classes from './InfoBar.module.css'
+import {kgToStLbs} from "../../../utils/conversions.js";
 
-const InfoBar = ({result}) => {
+const InfoBar = ({result, system}) => {
+
+    const formatWeightString = (w, system) => {
+        if (system === 'metric'){
+            return `${w}kgs`
+        }
+        else{
+            let imperialW = kgToStLbs(w)
+            return `${imperialW.stones}st ${imperialW.lbs}lbs`
+        }
+    }
+
+
     return (
         <div className={classes.infoBar}>
             {result ? (
@@ -9,10 +22,10 @@ const InfoBar = ({result}) => {
                     <div className={classes.resultContainer}>
                         <div className={classes.leftColumn}>
                             <div className={classes.resultTitle}>Your BMI is...</div>
-                            <span className={classes.result}>{result}</span>
+                            <span className={classes.result}>{result.bmi}</span>
                         </div>
                         <p className={classes.description}>Your BMI suggests you’re a healthy weight.
-                            Your ideal weight is between <b>63.3kgs - 85.2kgs.</b></p>
+                            Your ideal weight is between <b>{formatWeightString(result.minWeight, system)} - {formatWeightString(result.maxWeight, system)}.</b></p>
                     </div>
                 </>
             ) : (
