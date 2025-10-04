@@ -53,3 +53,13 @@
     flex-direction: column;
     gap: 8px;
 }
+
+@media (max-width: 600px) {
+    .infoBar {
+        border-radius: 16px;
+    }
+
+    .resultContainer{
+        grid-template-columns: 1fr;
+    }
+}

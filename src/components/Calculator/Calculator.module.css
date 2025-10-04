@@ -35,3 +35,14 @@
 .imperial{
     flex-direction: column;
 }
+
+
+@media (max-width: 600px) {
+    .calculator{
+        padding: 24px;
+        gap: 24px;
+    }
+    .fieldsContainer{
+        flex-direction: column;
+    }
+}
