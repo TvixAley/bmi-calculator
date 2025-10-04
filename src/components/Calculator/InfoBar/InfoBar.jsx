@@ -37,7 +37,7 @@ const InfoBar = ({result, system}) => {
                             </span>
                         </div>
                         <p className={classes.description}>
-                            Your BMI suggests you’re{result.healthy ? ' ' : ' not '}a healthy weight.
+                            Your BMI suggests you’re {result.classification}.
                             Your ideal weight is between{" "}
                             <b>
                                 {formatWeightString(result.minWeight, system)} -{" "}
