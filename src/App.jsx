@@ -1,12 +1,14 @@
-import Hero from "./components/sections/Hero/Hero.jsx";
-import YourResult from "./components/sections/YourResult/YourResult.jsx";
+import HeroSection from "./components/sections/HeroSection/HeroSection.jsx";
+import YourResultSection from "./components/sections/YourResultSection/YourResultSection.jsx";
+import TipsSection from "./components/sections/TipsSection/TipsSection.jsx";
 
 function App() {
 
   return (
     <>
-        <Hero/>
-        <YourResult/>
+        <HeroSection/>
+        <YourResultSection/>
+        <TipsSection/>
     </>
   )
 }

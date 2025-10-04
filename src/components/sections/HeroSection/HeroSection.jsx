@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './Hero.module.css'
+import classes from './HeroSection.module.css'
 import logo from '../../../assets/images/logo.svg'
 import Calculator from "../../Calculator/Calculator.jsx";
 
-const Hero = () => {
+const HeroSection = () => {
     return (
         <section className={classes.hero}>
             <img src={logo} alt="" width={58} height={58}/>
@@ -22,4 +22,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default HeroSection;

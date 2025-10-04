@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './YourResult.module.css'
+import classes from './YourResultSection.module.css'
 import image from '../../../assets/images/image-man-eating.webp'
 import imageTablet from '../../../assets/images/image-man-eating-tablet.webp'
 
-const YourResult = () => {
+const YourResultSection = () => {
     return (
         <section className={classes.resultsSection}>
             <picture>
@@ -23,4 +23,4 @@ const YourResult = () => {
     );
 };
 
-export default YourResult;
+export default YourResultSection;
