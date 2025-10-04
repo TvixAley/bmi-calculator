@@ -9,5 +9,6 @@ export function calculateBMI(heightCm, weightKg) {
         bmi: bmi.toFixed(1),
         minWeight: minWeight.toFixed(1),
         maxWeight: maxWeight.toFixed(1),
+        healthy: weightKg >= minWeight && bmi <= maxWeight,
     };
 }
