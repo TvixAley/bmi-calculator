@@ -36,7 +36,7 @@ const Calculator = () => {
     }
 
     let result = null;
-    if(data.metric.height && data.metric.weight) result = calculateBMI(data.metric.height, data.metric.weight)
+    if((data.metric.height > 100) && (data.metric.weight > 20)) result = calculateBMI(data.metric.height, data.metric.weight)
 
     return (
         <div className={classes.calculator}>
